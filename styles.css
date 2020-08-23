@@ -237,6 +237,10 @@ ul {
 	color: #ffffff;
 }
 
+.slide__btns {
+	display: flex;
+}
+
 /*   тут менять можно фон для слайдов    */
 .slide-first {
 	height: 100%;
@@ -266,10 +270,12 @@ ul {
 
 .main__content {
 	display: flex;
+	justify-content: space-between;
+	padding: 40px 80px;
 }
 
 .content__img, .content__text {
-	width: 50%;
+	width: 46%;
 	padding: 16px;
 }
 
@@ -279,26 +285,26 @@ ul {
 
 .content__text_header {
 	padding-right: 10%;
-	font-size: 32px;
+	font-size: 30px;
 	margin-top: 0;
 }
 
 .content__text p, .vision p {
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 30px;
+	line-height: 1.4;
 	padding-right: 10%;
 }
 
-.featured, .specializations, .clients {
-	padding: 20px 80px;
+.featured, .clients {
+	padding: 40px 80px;
 }
 
 .featured .block__header, .specializations .block__header, .clients .block__header {
 	display: block;
 	width: fit-content;
 	margin: 0 auto;
-	margin-bottom: 24px;
+	margin-bottom: 40px;
 	padding:  0 16px;
 	background: linear-gradient(180deg, rgba(255,255,255,.8) 60%, rgba(215,0,0,.8) 60%);
 }
@@ -337,7 +343,7 @@ ul {
 
 /*  styles for team page*/
 .team {
-	margin: 0 80px;
+	padding: 0 80px;
 }
 
 .vision {
@@ -519,11 +525,23 @@ ul {
 	.team {
 		margin: 0 40px;
 	}
+
+	.main__content {
+		padding: 40px;
+	}
+
+	.clients {
+		padding: 20px 40px;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	.mobile-menu {
 		display: block;
+	}
+
+	.featured, .clients {
+		padding: 40px;
 	}
 
 	.team__people {
@@ -563,6 +581,28 @@ ul {
 		width: 100%;
 	}
 
+	.slide h2 {
+		padding: 0 10%;
+	}
+
+	.main__content {
+		padding-right: 24px;
+		padding-left: 24px;
+	}
+
+	.content__text_header {
+		padding-right: 0;
+		font-size: 22px;
+	}
+
+	.content__text p, .vision p {
+		font-size: 16px;
+	}
+
+	.clients__blocks div {
+		padding: 32px;
+	}
+
 	.footer-first {
 		padding-right: 32px;
 		padding-left: 24px;
@@ -577,6 +617,54 @@ ul {
 	.header {
 		padding-right: 24px;
 		padding-left: 24px;
+	}
+
+	.main__content {
+		flex-direction: column;
+		padding: 0 8px;
+	}
+
+	.main__content.reverse {
+		flex-direction: column-reverse;
+	}
+
+	.featured, .clients {
+		padding: 24px;
+	}
+
+	.clients__blocks {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.clients__blocks div {
+		padding: 16px;
+		width: 25%;
+	}
+
+	.content__img, .content__text {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.content__text p, .vision p {
+		padding-right: 0;
+	}
+
+	.featured__cards {
+		flex-direction: column;
+	}
+
+	.featured__card {
+		width: 100%;
+	}
+
+	.slide__btns {
+		flex-direction: column;
+	}
+
+	.slide .menu__link {
+		margin: 16px 0;
 	}
 
 	.team {
