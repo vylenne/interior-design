@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Team</title>
@@ -12,6 +13,9 @@
     <img src="img/instagram.svg" alt="" style="background-color: #fff">
   </div>
   <div class="menu">
+    <div class="mobile-menu">
+      <div class="burger"></div>
+    </div>
     <ul class="topmenu">
       <li>
         <a href="about.html" class="menu__link">About us</a>
@@ -31,6 +35,48 @@
   </div>
 </header>
 <section class="team">
+  <div class="vision">
+    <h2 class="block__header">Our Vision</h2>
+    <p class="vision__text">Our philosophy is that every creative we prepare is a unique piece of art, where our clients
+      can achieve to
+      express all emotions, forms, and vision for the project, making it ‘Unique‘. Our deliverables have two essential
+      elements: Passion for art and Dedication to the client.</p>
+  </div>
+  <div class="team__people">
+    <div class="people__block">
+      <div class="content-overlay"></div>
+      <img class="people__block__img" src="https://ynka.com.tr/wp-content/uploads/2019/08/umut-hanım-700x900.jpg">
+      <div class="block__inner">
+        <h3 class="people__block__name">Surname and Name</h3>
+        <p class="people__block__position">Position and stazh</p>
+      </div>
+    </div>
+    <div class="people__block">
+      <div class="content-overlay"></div>
+      <img class="people__block__img" src="https://ynka.com.tr/wp-content/uploads/2019/08/umut-hanım-700x900.jpg">
+      <div class="block__inner">
+        <h3 class="people__block__name">Surname and Name</h3>
+        <p class="people__block__position">Position and stazh</p>
+      </div>
+    </div>
+    <div class="people__block">
+      <div class="content-overlay"></div>
+      <img class="people__block__img" src="https://ynka.com.tr/wp-content/uploads/2019/08/umut-hanım-700x900.jpg">
+      <div class="block__inner">
+        <h3 class="people__block__name">Surname and Name</h3>
+        <p class="people__block__position">Position and stazh</p>
+      </div>
+    </div>
+    <div class="people__block">
+      <div class="content-overlay"></div>
+      <img class="people__block__img" src="https://ynka.com.tr/wp-content/uploads/2019/08/umut-hanım-700x900.jpg">
+      <div class="block__inner">
+        <h3 class="people__block__name">Surname and Name</h3>
+        <p class="people__block__position">Position and stazh</p>
+      </div>
+    </div>
+
+  </div>
 
 </section>
 <footer class="footer">
@@ -81,5 +127,15 @@
     <p class="copyright">© 2020 <span>Rayvat Engineering.</span> All Rights Reserved.</p>
   </div>
 </footer>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.mobile-menu').click(function() {
+			$(this).toggleClass('active');
+			$('.topmenu').toggleClass('active');
+		})
+
+	});
+</script>
 </body>
 </html>
