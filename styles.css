@@ -296,6 +296,10 @@ ul {
 	padding-right: 10%;
 }
 
+.content__text_subtitle {
+	font-weight: 600!important;
+}
+
 .featured, .clients {
 	padding: 40px 80px;
 }
@@ -422,6 +426,31 @@ ul {
 	margin: 0;
 }
 
+/*  styles for how it works page  */
+.instruction__header {
+	height: 400px;
+	background: url("img/01_Senegal Hotel/01_Senegal Palm Beach Hotel 005 Presidental Suite/r1.jpg") center center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #ffffff;
+}
+
+.instruction__header-title {
+	font-size: 4vw;
+	margin: 0;
+	font-weight: 600;
+}
+
+.instruction__header-subtitle {
+	font-size: 2vw;
+	margin: 16px 0 0;
+	font-weight: 300;
+}
+
+
 /*		footer styles   */
 
 .footer {
@@ -540,6 +569,18 @@ ul {
 		display: block;
 	}
 
+	.instruction__header {
+		height: 300px;
+	}
+
+	.instruction__header-title {
+		font-size: 8vw;
+	}
+
+	.instruction__header-subtitle {
+		font-size: 4vw;
+	}
+
 	.featured, .clients {
 		padding: 40px;
 	}
@@ -610,6 +651,7 @@ ul {
 
 	.footer__block {
 		width: 50%;
+		margin-bottom: 24px;
 	}
 }
 
@@ -683,7 +725,6 @@ ul {
 	.footer__block {
 		width: 100%;
 		padding: 0;
-		margin-bottom: 24px;
 	}
 
 	.footer-list__link {

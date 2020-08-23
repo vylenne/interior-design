@@ -13,6 +13,9 @@
     <img src="img/instagram.svg" alt="" style="background-color: #fff">
   </div>
   <div class="menu">
+    <div class="mobile-menu">
+      <div class="burger"></div>
+    </div>
     <ul class="topmenu">
       <li>
         <a href="about.html" class="menu__link">About us</a>
@@ -31,8 +34,77 @@
     </ul>
   </div>
 </header>
-<section class="main">
+<section class="instruction">
+  <div class="instruction__header">
+    <h2 class="instruction__header-title">How it Works</h2>
+    <h3 class="instruction__header-subtitle">3D Rendering Process Flow</h3>
+  </div>
+  <div class="main__content reverse">
+    <div class="content__text">
+      <h2 class="content__text_header">Stage - 1: Pre - Start</h2>
+      <p class="content__text_subtitle">First Meeting</p>
+      <p>We shall arrange a kick off call from our end at a time of your convenience. You are requested to get as many
+        stakeholders available for this call.</p>
+      <p>
+        We shall discuss: <br>
 
+        - The hierarchy of stakeholders <br>
+        - The deliverable nuances <br>
+        - Input data brief <br>
+        - Process Flow and milestones</p>
+
+      <p>Get in touch with us today to witness how we can assist you with breathtaking Architectural Modeling, 3D
+        Visualizations, and Animations. For the next generation marketing, partner with us for 3D Architectural
+        Rendering, 360° Virtual Reality, and Walkthrough Animation.</p>
+    </div>
+    <div class="content__img">
+      <img src="https://cdn.rayvatengineering.com/wp-content/uploads/2018/08/Stage-1-554x340.jpg" alt="">
+    </div>
+  </div>
+  <div class="main__content">
+    <div class="content__img">
+      <img src="https://cdn.rayvatengineering.com/wp-content/uploads/2018/08/Stage-2-553x292.jpg" alt="">
+    </div>
+    <div class="content__text">
+      <h2 class="content__text_header">Stage - 2: Modeling and Artistic Brief</h2>
+      <p class="content__text_subtitle">First Meeting</p>
+      <p>We shall arrange a kick off call from our end at a time of your convenience. You are requested to get as many
+        stakeholders available for this call.</p>
+      <p>
+        We shall discuss: <br>
+
+        - The hierarchy of stakeholders <br>
+        - The deliverable nuances <br>
+        - Input data brief <br>
+        - Process Flow and milestones</p>
+
+      <p>Get in touch with us today to witness how we can assist you with breathtaking Architectural Modeling, 3D
+        Visualizations, and Animations. For the next generation marketing, partner with us for 3D Architectural
+        Rendering, 360° Virtual Reality, and Walkthrough Animation.</p>
+    </div>
+  </div>
+  <div class="main__content reverse">
+    <div class="content__text">
+      <h2 class="content__text_header">Stage - 3: The First Draft</h2>
+      <p class="content__text_subtitle">First Meeting</p>
+      <p>We shall arrange a kick off call from our end at a time of your convenience. You are requested to get as many
+        stakeholders available for this call.</p>
+      <p>
+        We shall discuss: <br>
+
+        - The hierarchy of stakeholders <br>
+        - The deliverable nuances <br>
+        - Input data brief <br>
+        - Process Flow and milestones</p>
+
+      <p>Get in touch with us today to witness how we can assist you with breathtaking Architectural Modeling, 3D
+        Visualizations, and Animations. For the next generation marketing, partner with us for 3D Architectural
+        Rendering, 360° Virtual Reality, and Walkthrough Animation.</p>
+    </div>
+    <div class="content__img">
+      <img src="https://cdn.rayvatengineering.com/wp-content/uploads/2018/08/Stage-3-554x335.jpg" alt="">
+    </div>
+  </div>
 </section>
 <footer class="footer">
   <div class="footer-first">
@@ -82,5 +154,15 @@
     <p class="copyright">© 2020 <span>Rayvat Engineering.</span> All Rights Reserved.</p>
   </div>
 </footer>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.mobile-menu').click(function() {
+			$(this).toggleClass('active');
+			$('.topmenu').toggleClass('active');
+		})
+
+	});
+</script>
 </body>
 </html>
