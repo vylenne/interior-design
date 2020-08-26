@@ -13,6 +13,9 @@
     <img src="img/instagram.svg" alt="" style="background-color: #fff">
   </div>
   <div class="menu">
+    <div class="mobile-menu">
+      <div class="burger"></div>
+    </div>
     <ul class="topmenu">
       <li>
         <a href="about.html" class="menu__link">About us</a>
@@ -21,9 +24,9 @@
       <li>
         <a href="javascript:void(0)" class="menu__link">Portfolio</a>
         <ul class="submenu">
-          <li><a href="">3D Interior</a></li>
-          <li><a href="">3D Exterior</a></li>
-          <li><a href="">3D Floor Plan</a></li>
+          <li><a href="3d-interior.html">3D Interior</a></li>
+          <li><a href="3d-exterior.html">3D Exterior</a></li>
+          <li><a href="floor-plan.html">3D Floor Plan</a></li>
         </ul>
       </li>
       <li><a href="howitworks.html" class="menu__link">How it works</a></li>
@@ -31,8 +34,37 @@
     </ul>
   </div>
 </header>
-<section class="main">
+<section class="contacts">
+  <h2 class="block__header">Drop a Line</h2>
+  <div class="contacts__block">
+    <div class="contacts__block-half">
+      <h2>POST YOUR QUERY</h2>
+      <div class="contact-us">
+        <form action="#">
+          <label for="customerName">Name <span>&#x2a;</span></label>
+          <input id="customerName" name="customerName" required="" type="text"/>
+          <label for="customerEmail">Email-ID<span>&#x2a;</span></label>
+          <input id="customerEmail" name="customerEmail" required="" type="email"/>
+          <label for="customerPhone">Phone</label>
+          <input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel"/>
+          <label for="orderNumber">Subject</label>
+          <input id="orderNumber" name="orderNumber" type="text"/>
+          <label for="customerNote">Your message<span>&#x2a;</span></label>
+          <textarea id="customerNote" name="customerNote" required="" rows="4"></textarea>
+          <button id="customerOrder" class="btn-send">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="contacts__block-half">
+      <h2>Our Address</h2>
+      <p>3655 W Anthem Way, Ste
+        A109-515, Anthem, AZ 85086</p>
 
+      <p> engineering@rayvat.com</p>
+
+      <p>(US) : +1 (888) 863-4445</p>
+    </div>
+  </div>
 </section>
 <footer class="footer">
   <div class="footer-first">

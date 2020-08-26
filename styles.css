@@ -32,8 +32,7 @@ ul {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 	transition: 0.3s;
 }
-.burger::before,
-.burger::after{
+.burger::before, .burger::after{
 	content: '';
 	position: absolute;
 	width: 40px;
@@ -112,7 +111,6 @@ ul {
 }
 
 .menu__link:hover {
-	border-bottom: 1px solid #d70000;
 	color: #d70000;
 }
 
@@ -165,7 +163,6 @@ ul {
 }
 
 .submenu li a:hover {
-	border-bottom: 1px solid #d70000;
 	color: #d70000;
 }
 
@@ -304,13 +301,10 @@ ul {
 	padding: 40px 80px;
 }
 
-.featured .block__header, .specializations .block__header, .clients .block__header {
+.featured .block__header, .specializations .block__header, .clients .block__header, .contacts .block__header {
 	display: block;
 	width: fit-content;
-	margin: 0 auto;
-	margin-bottom: 40px;
-	padding:  0 16px;
-	background: linear-gradient(180deg, rgba(255,255,255,.8) 60%, rgba(215,0,0,.8) 60%);
+	margin: 0 auto 40px;
 }
 
 .featured__cards {
@@ -358,30 +352,15 @@ ul {
 	border-top: 2px solid rgba(30, 30, 30, 0.4);
 	padding: 40px 0;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .people__block {
-	position: relative;
 	box-sizing: border-box;
-	width: 22%;
+	width: 25%;
+	padding: 0 16px;
 	overflow: hidden;
-}
-
-.content-overlay {
-	background: rgba(0,0,0,0.7);
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	opacity: 0;
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	-moz-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
-	z-index: 2;
+	margin-bottom: 24px;
 }
 
 .people__block__img {
@@ -390,29 +369,6 @@ ul {
 	width: 100%;
 	height: auto;
 	transition: .5s ease;
-	backface-visibility: hidden;
-}
-
-.block__inner {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
-	bottom: 5%;
-	left: 5%;
-	color: #ffffff;
-	z-index: 4;
-}
-
-.people__block:hover .content-overlay {
-	opacity: 0.4;
-}
-
-.people__block:hover .people__block__img {
-	transform: scale(1.1);
-}
-
-.people__block:hover .block__inner {
-	opacity: 1;
 }
 
 .people__block__name {
@@ -448,6 +404,75 @@ ul {
 	font-size: 2vw;
 	margin: 16px 0 0;
 	font-weight: 300;
+}
+
+/* styles for contacts page*/
+
+.contacts {
+	padding: 40px 80px;
+}
+
+.contacts__block {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 40px;
+}
+
+.contacts__block-half {
+	width: 50%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	margin-bottom: 24px;
+}
+
+.contacts__block-half h2 {
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+
+.contacts__block-half p {
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 300;
+}
+
+.contacts label, .contacts input, .contacts textarea {
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.contacts input, .contacts textarea {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	background: rgba(215, 0, 0, 0);
+	padding: 4px;
+	margin-bottom: 24px;
+	outline: none;
+	resize: none;
+	box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid #d70000;
+}
+
+.contacts label span {
+	color: #d70000;
+}
+
+.btn-send {
+	border: none;
+	outline: none;
+	margin-top: 24px;
+	padding: 16px 40px;
+	text-transform: uppercase;
+	background-color: #d70000;
+	color: #ffffff;
+	font-size: 16px;
+	letter-spacing: 1px;
 }
 
 
@@ -498,20 +523,14 @@ ul {
 	transition: .3s;
 }
 
-.footer-list__link span {
-	transition: .3s;
-}
-
-.footer-list__link:hover span {
-	border-bottom: 1px solid #d70000;
-}
-
 .footer-list__link:hover svg {
 	opacity: 1;
+	color: #ffffff;
 }
 
 .footer-list__link:hover {
-	transform: translateY(-2px);
+	transform: translateY(-1px);
+	color: #d70000;
 }
 
 .footer__social {
@@ -581,7 +600,7 @@ ul {
 		font-size: 4vw;
 	}
 
-	.featured, .clients {
+	.featured, .clients, .contacts {
 		padding: 40px;
 	}
 
@@ -644,6 +663,10 @@ ul {
 		padding: 32px;
 	}
 
+	.contacts__block-half {
+		width: 100%;
+	}
+
 	.footer-first {
 		padding-right: 32px;
 		padding-left: 24px;
@@ -670,8 +693,12 @@ ul {
 		flex-direction: column-reverse;
 	}
 
-	.featured, .clients {
+	.featured, .clients, .contacts {
 		padding: 24px;
+	}
+
+	.contacts__block {
+		margin-bottom: 0;
 	}
 
 	.clients__blocks {
