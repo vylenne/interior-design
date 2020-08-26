@@ -289,7 +289,7 @@ ul {
 .content__text p, .vision p {
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 1.4;
+	line-height: 1.5;
 	padding-right: 10%;
 }
 
@@ -297,11 +297,11 @@ ul {
 	font-weight: 600!important;
 }
 
-.featured, .clients {
+.featured, .clients, .about__content {
 	padding: 40px 80px;
 }
 
-.featured .block__header, .specializations .block__header, .clients .block__header, .contacts .block__header {
+.featured .block__header, .specializations .block__header, .clients .block__header, .contacts .block__header, .about .block__header {
 	display: block;
 	width: fit-content;
 	margin: 0 auto 40px;
@@ -382,7 +382,8 @@ ul {
 	margin: 0;
 }
 
-/*  styles for how it works page  */
+/*  styles for how it works page + about page */
+
 .instruction__header {
 	height: 400px;
 	background: url("img/01_Senegal Hotel/01_Senegal Palm Beach Hotel 005 Presidental Suite/r1.jpg") center center no-repeat;
@@ -394,16 +395,40 @@ ul {
 	color: #ffffff;
 }
 
-.instruction__header-title {
+.about__header {
+	height: 400px;
+	background: url("img/01_Senegal Hotel/01_Senegal Palm Beach Hotel 005 Presidental Suite/r4.jpg") center center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #ffffff;
+}
+
+.instruction__header-title, .about__header-title {
 	font-size: 4vw;
 	margin: 0;
 	font-weight: 600;
 }
 
-.instruction__header-subtitle {
+.instruction__header-subtitle, .about__header-subtitle {
 	font-size: 2vw;
 	margin: 16px 0 0;
 	font-weight: 300;
+}
+
+.about__header-subtitle {
+	font-size: 2vw;
+	margin: 16px 0 0;
+	font-weight: 300;
+	padding: 0 80px;
+}
+
+.about__content-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 /* styles for contacts page*/
