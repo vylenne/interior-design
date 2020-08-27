@@ -85,6 +85,15 @@
     <p class="copyright">© 2020 <span>Rayvat Engineering.</span> All Rights Reserved.</p>
   </div>
 </footer>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.mobile-menu').click(function() {
+			$(this).toggleClass('active');
+			$('.topmenu').toggleClass('active');
+		})
 
+	});
+</script>
 </body>
 </html>

@@ -697,7 +697,7 @@ input:focus, textarea:focus {
 		padding: 40px;
 	}
 
-	.clients {
+	.clients, .about__content {
 		padding: 20px 40px;
 	}
 }
@@ -719,7 +719,7 @@ input:focus, textarea:focus {
 		font-size: 4vw;
 	}
 
-	.featured, .clients, .contacts, .about__content {
+	.featured, .clients, .contacts {
 		padding: 40px;
 	}
 
@@ -784,6 +784,23 @@ input:focus, textarea:focus {
 
 	.contacts__block-half {
 		width: 100%;
+	}
+
+	.about__content {
+		padding: 0 40px 24px;
+	}
+
+	.about__gallery {
+		flex-wrap: wrap;
+	}
+
+	.about__gallery-block {
+		width: 50%;
+	}
+
+	.about__gallery-block-draft {
+		width: 33%;
+		padding: 8px;
 	}
 
 	.footer-first {
