@@ -86,8 +86,9 @@ ul {
 	flex: 1;
 }
 
-.logo img {
+.header__logo {
 	height: 40px;
+	width: auto;
 }
 
 .menu {
@@ -531,6 +532,11 @@ input:focus, textarea:focus {
 	margin-top: 0;
 	text-transform: uppercase;
 	color: #ffffff;
+}
+
+.footer__logo {
+	height: auto;
+	width: 64%;
 }
 
 .footer-list {
