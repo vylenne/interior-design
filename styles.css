@@ -711,11 +711,11 @@ input:focus, textarea:focus {
 		height: 300px;
 	}
 
-	.instruction__header-title {
+	.instruction__header-title ,.about__header-title {
 		font-size: 8vw;
 	}
 
-	.instruction__header-subtitle {
+	.instruction__header-subtitle, .about__header-subtitle {
 		font-size: 4vw;
 	}
 
@@ -756,8 +756,9 @@ input:focus, textarea:focus {
 	}
 
 	.topmenu.active > li > a {
-		margin: 0;
-		width: 100%;
+		width: auto;
+		display: block;
+		margin: 0 32px;
 	}
 
 	.slide h2 {
@@ -876,8 +877,22 @@ input:focus, textarea:focus {
 		margin: 0 24px;
 	}
 
-	.people__block {
+	.people__block, .about__gallery-block, .about__gallery-block-draft {
 		width: 100%;
+	}
+
+	.about__table {
+		border: none;
+	}
+
+	.divTableRow {
+		flex-direction: column;
+		/*border: none;*/
+	}
+
+	.divTableCell.head {
+		padding: 8px;
+		border: none;
 	}
 
 	.footer-first {
