@@ -71,6 +71,7 @@ ul {
 	font-size: 32px;
 	font-weight: 600;
 	margin-top: 0;
+	background: linear-gradient(130deg, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 1) 75%, rgba(215, 0, 0, 1) 75%, rgba(215, 0, 0, 1) 85%, rgba(255, 255, 255, 1) 85%);
 }
 
 /*
@@ -121,7 +122,8 @@ ul {
 }
 
 .menu__link.contact:hover {
-	color: #fff;
+	color: #d70000;
+	background-color: #ffffff;
 }
 
 /*
@@ -235,9 +237,19 @@ ul {
 	color: #1e1e1e;
 }
 
+.slide .menu__link.contact:hover.white {
+	background-color: #1e1e1e;
+	color: #ffffff;
+}
+
 .slide .menu__link.contact.black {
 	background-color: #1e1e1e;
 	color: #ffffff;
+}
+
+.slide .menu__link.contact:hover.black {
+	background-color: #ffffff;
+	color: #1e1e1e;
 }
 
 .slide__btns {
@@ -309,7 +321,7 @@ ul {
 
 .featured .block__header, .specializations .block__header, .clients .block__header, .contacts .block__header, .about .block__header {
 	display: block;
-	width: fit-content;
+	text-align: center;
 	margin: 0 auto 40px;
 }
 
@@ -355,7 +367,7 @@ ul {
 }
 
 .team__people {
-	border-top: 2px solid rgba(30, 30, 30, 0.4);
+	border-top: 1px solid rgba(30, 30, 30, 0.6);
 	padding: 40px 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -386,13 +398,14 @@ ul {
 .people__block__position {
 	font-size: 16px;
 	margin: 0;
+	background: linear-gradient(130deg, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 1) 75%, rgba(215, 0, 0, 1) 75%, rgba(215, 0, 0, 1) 85%, rgba(255, 255, 255, 1) 85%);
 }
 
 /*  styles for how it works page + about page */
 
 .instruction__header {
 	height: 400px;
-	background: url("img/01_Senegal Hotel/01_Senegal Palm Beach Hotel 005 Presidental Suite/r1.jpg") center center no-repeat;
+	background: url("img/01_Senegal_Hotel/01_Senegal Palm Beach Hotel 007 Standart Room/z1.jpg") center center no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -403,7 +416,7 @@ ul {
 
 .about__header {
 	height: 400px;
-	background: url("img/01_Senegal Hotel/01_Senegal Palm Beach Hotel 005 Presidental Suite/r4.jpg") center center no-repeat;
+	background: url("img/01_Senegal_Hotel/01_Senegal Palm Beach Hotel 007 Standart Room/z6.jpg") center center no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -598,7 +611,7 @@ input:focus, textarea:focus {
 .interior__gallery {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .interior__gallery--block {
@@ -879,12 +892,13 @@ input:focus, textarea:focus {
 		font-size: 4vw;
 	}
 
-	.featured, .clients, .contacts {
+	.featured, .clients, .contacts, .team {
 		padding: 40px;
 	}
 
 	.team__people {
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.people__block {
