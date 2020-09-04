@@ -71,7 +71,6 @@ ul {
 	font-size: 32px;
 	font-weight: 600;
 	margin-top: 0;
-	background: linear-gradient(130deg, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 1) 75%, rgba(215, 0, 0, 1) 75%, rgba(215, 0, 0, 1) 85%, rgba(255, 255, 255, 1) 85%);
 }
 
 /*
@@ -323,11 +322,29 @@ ul {
 	display: block;
 	text-align: center;
 	margin: 0 auto 40px;
+	position: relative;
+}
+
+.featured .block__header:after,
+.specializations .block__header:after,
+.clients .block__header:after, .contacts .block__header:after,
+.about .block__header:after {
+	content: "";
+	position: absolute;
+	bottom: -16px;
+	left: 0;
+	margin: 0 auto;
+	right: 0;
+	width: 25%;
+	height: 6px;
+	box-shadow: 0 3px 5px 0 rgba(215, 0, 0, 0.81);
+	background: #d70000;
 }
 
 .featured__cards {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 24px;
 }
 
 .featured__card {
@@ -398,7 +415,6 @@ ul {
 .people__block__position {
 	font-size: 16px;
 	margin: 0;
-	background: linear-gradient(130deg, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 1) 75%, rgba(215, 0, 0, 1) 75%, rgba(215, 0, 0, 1) 85%, rgba(255, 255, 255, 1) 85%);
 }
 
 /*  styles for how it works page + about page */
@@ -615,13 +631,13 @@ input:focus, textarea:focus {
 }
 
 .interior__gallery--block {
-	width: 23%;
+	width: 24%;
 	text-align: center;
 	position: relative;
 	cursor: pointer;
 	perspective: 500px;
 	display: block;
-	margin-bottom: 24px;
+	margin-bottom: 12px;
 }
 
 .interior__gallery--block img {
@@ -630,9 +646,9 @@ input:focus, textarea:focus {
 }
 
 .interior__gallery--block .details {
-	width: 80%;
+	width: 70%;
 	box-sizing: border-box;
-	height: 80%;
+	height: 60%;
 	padding: 5% 8%;
 	position: absolute;
 	content: "";
@@ -640,7 +656,7 @@ input:focus, textarea:focus {
 	left: 50%;
 	transform: translate(-50%, -50%) rotateY(90deg);
 	transform-origin: 50%;
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.7);
 	opacity: 0;
 	transition: all 0.4s ease-in;
 	display: flex;
