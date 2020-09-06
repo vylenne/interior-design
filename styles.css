@@ -211,17 +211,19 @@ ul {
 	color: white;
 	box-sizing: border-box;
 	text-align: center;
+	outline: none;
 }
 
-.slide h1 {
+.slider__title {
 	font-size: 6vh;
 	font-weight: 300;
+	transform: translateY(700px);
+	transition: transform 1s;
 }
 
-.slide h2 {
-	font-size: 4vh;
-	font-weight: 300;
-	margin-top: 0;
+.slick-active .slider__title {
+	transform: translateY(0);
+	transition: transform .5s;
 }
 
 .slide .menu__link {
@@ -734,6 +736,10 @@ input:focus, textarea:focus {
 	z-index: 40;
 }
 
+.modal__text {
+	color: #EEEEEE;
+}
+
 .modal .slick-slide {
 	max-height: 680px;
 }
@@ -744,7 +750,7 @@ input:focus, textarea:focus {
 	transition: .3s ease;
 }
 
-.slick-active img {
+.modal .slick-active img {
 	transform: scale(1, 1) !important;
 }
 
