@@ -218,12 +218,12 @@ ul {
 	font-size: 6vh;
 	font-weight: 300;
 	transform: translateY(700px);
-	transition: transform 1s;
+	transition: transform 2s;
 }
 
 .slick-active .slider__title {
 	transform: translateY(0);
-	transition: transform .5s;
+	transition: transform .7s;
 }
 
 .slide .menu__link {
@@ -366,7 +366,7 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 20%;
+	width: 16%;
 	padding: 40px;
 	margin-bottom: 24px;
 	box-sizing: border-box;
