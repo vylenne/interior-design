@@ -324,6 +324,10 @@ ul {
 	padding: 40px 80px;
 }
 
+.specializations {
+	padding: 60px 0 0;
+}
+
 .featured .block__header, .specializations .block__header, .clients .block__header, .contacts .block__header, .about .block__header {
 	display: block;
 	text-align: center;
@@ -524,7 +528,8 @@ ul {
 
 .about__gallery {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	margin-bottom: 24px;
 }
 
 .about__gallery-block {
