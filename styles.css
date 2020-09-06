@@ -355,7 +355,7 @@ ul {
 
 .featured__card {
 	width: 33.3%;
-	height: 400px;
+	height: 450px;
 	display: flex;
 }
 
@@ -376,7 +376,7 @@ ul {
 	display: block;
 	padding: 24px;
 	color: #ffffff;
-	background-color: rgba(215, 0, 0, 0.75);
+	background-color: rgba(215, 0, 0, 0.8);
 	text-transform: uppercase;
 	text-decoration: none;
 	width: 25%;
