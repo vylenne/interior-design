@@ -291,6 +291,7 @@ ul {
 .content__img, .content__text {
 	width: 46%;
 	padding: 16px;
+	text-align: justify;
 }
 
 .content__link {
@@ -480,7 +481,7 @@ ul {
 
 .instruction__header {
 	height: 400px;
-	background: url("img/01_Senegal_Hotel/01_Senegal Palm Beach Hotel 007 Standart Room/z1.jpg") center center no-repeat;
+	background: url("img/How/how it works background.jpeg") center center no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
