@@ -92,7 +92,7 @@ ul {
 }
 
 .header__logo {
-	height: 40px;
+	height: 50px;
 	width: auto;
 }
 
@@ -618,7 +618,7 @@ input:focus, textarea:focus {
 	letter-spacing: 1px;
 }
 
-/* styles for interior page*/
+/* styles for interior, exterior, floor-plane page*/
 
 .interior {
 	padding: 40px 80px;
@@ -642,7 +642,8 @@ input:focus, textarea:focus {
 
 .interior__gallery--block img {
 	width: 100%;
-	max-height: 300px;
+	height: 100%;
+	max-height: 250px;
 }
 
 .interior__gallery--block .details {
@@ -689,7 +690,7 @@ input:focus, textarea:focus {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .7);
 	z-index: 25;
 	transition: .3s all;
 }
@@ -699,7 +700,7 @@ input:focus, textarea:focus {
 	opacity: 0;
 	visibility: hidden;
 	width: 100%;
-	height: 80%;
+	height: 100%;
 	max-width: 1200px;
 	position: fixed;
 	top: 50%;
@@ -708,10 +709,11 @@ input:focus, textarea:focus {
 	z-index: 35; /* Должен быть выше чем у подложки*/
 	box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
 	text-align: center;
-	padding: 50px 20px;
 	box-sizing: border-box;
-	background-color: #fff;
 	transition: 0.3s all;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 /* Стили для активных классов подложки и окна */
@@ -722,18 +724,18 @@ input:focus, textarea:focus {
 
 /* Стили для кнопки закрытия */
 .modal__cross {
-	width: 24px;
-	height: 24px;
+	width: 32px;
+	height: 32px;
 	position: absolute;
-	top: 20px;
-	right: 20px;
-	fill: #444;
+	top: 40px;
+	right: 0;
+	fill: #ffffff;
 	cursor: pointer;
 	z-index: 40;
 }
 
 .modal .slick-slide {
-	max-height: 500px;
+	max-height: 680px;
 }
 
 .modal .slider-single .slick-slide img {
@@ -750,7 +752,7 @@ input:focus, textarea:focus {
 }
 
 .modal .slider-nav .slick-slide {
-	max-height: 100px;
+	max-height: 80px;
 	width: auto;
 	margin-right: 4px;
 }
@@ -761,8 +763,8 @@ input:focus, textarea:focus {
 }
 
 .modal .slick-next:before, .modal .slick-prev:before {
-	color: #0f0f0f;
-	font-size: 32px;
+	color: #ffffff;
+	font-size: 40px;
 }
 
 .modal .slick-next {
