@@ -740,6 +740,12 @@ input:focus, textarea:focus {
 
 .modal .slider-single .slick-slide img {
 	height: 100%;
+	transform: scale(0.9, 0.9);
+	transition: .3s ease;
+}
+
+.slick-active img {
+	transform: scale(1, 1) !important;
 }
 
 .modal .slider-nav {
