@@ -354,9 +354,10 @@ ul {
 }
 
 .featured__card {
-	width: 33.3%;
+	width: 33.2%;
 	height: 450px;
 	display: flex;
+	margin-bottom: 4px;
 }
 
 .featured__card.first {
