@@ -151,8 +151,6 @@ ul {
 	border: 1px solid rgba(215, 0, 0, 0.51);
 	visibility: hidden;
 	opacity: 0;
-	transform-origin: 0% 0%;
-	transform: rotateX(-90deg);
 	transition: .3s linear;
 	top: 32px;
 	margin-left: 32px;
@@ -166,7 +164,7 @@ ul {
 	margin: 8px 16px;
 	border-bottom: 1px solid transparent;
 	transition: .3s;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .submenu li a:hover {
