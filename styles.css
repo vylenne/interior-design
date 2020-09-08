@@ -200,6 +200,7 @@ ul {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	outline: none;
 }
 
 .slide {
@@ -365,7 +366,7 @@ ul {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 4px;
+	margin-bottom: 8px;
 }
 
 .featured__card.first {
@@ -554,6 +555,7 @@ ul {
 .about__gallery__link {
 	display: flex;
 	text-decoration: none;
+	text-align: center;
 	text-transform: uppercase;
 	justify-content: center;
 	padding: 16px 0;
@@ -1002,7 +1004,7 @@ input:focus, textarea:focus {
 	.topmenu.active {
 		display: block;
 		position: absolute;
-		top: 64px;
+		top: 84px;
 		left: 0;
 		right: 0;
 		padding: 16px 0;
@@ -1076,10 +1078,29 @@ input:focus, textarea:focus {
 		width: 50%;
 		margin-bottom: 24px;
 	}
+
+	.featured .block__header:after, .specializations .block__header:after, .clients .block__header:after, .contacts .block__header:after, .about .block__header:after {
+		width: 50%;
+	}
+
+	.modal .slider-single .slick-slide img {
+		width: 90%;
+		margin: 0 auto;
+		height: auto;
+	}
+
+	.interior__gallery--block .details .title,
+	.interior__gallery--block .details .info {
+		font-size: 14px;
+	}
+
+	.modal__cross {
+		right: 40px;
+	}
 }
 
 @media screen and (max-width: 500px) {
-	.header {
+	.header, .interior {
 		padding-right: 24px;
 		padding-left: 24px;
 	}
@@ -1095,6 +1116,11 @@ input:focus, textarea:focus {
 
 	.featured, .clients, .contacts, .about__content {
 		padding: 24px;
+	}
+
+	.interior__gallery--block .details .title,
+	.interior__gallery--block .details .info {
+		font-size: 10px;
 	}
 
 	.contacts__block {
@@ -1138,14 +1164,26 @@ input:focus, textarea:focus {
 
 	.team {
 		margin: 0 24px;
+		padding-right: 0;
+		padding-left: 0;
 	}
 
 	.people__block, .about__gallery-block, .about__gallery-block-draft {
 		width: 100%;
+		padding: 0;
 	}
 
 	.about__table {
 		border: none;
+	}
+
+	.about__gallery-block {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.vision {
+		padding: 0;
 	}
 
 	.divTableRow {
