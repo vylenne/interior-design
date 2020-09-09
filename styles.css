@@ -1096,7 +1096,13 @@ input:focus, textarea:focus {
 
 	.modal__cross {
 		right: 40px;
+		height: 24px;
+		width: 24px;
 	}
+
+	/*.modal.active div:first-child {*/
+		/*height: 100%;*/
+	/*}*/
 }
 
 @media screen and (max-width: 500px) {
