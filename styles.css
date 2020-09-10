@@ -636,10 +636,18 @@ ul {
 	margin-bottom: 24px;
 }
 
-.contacts__block-half p {
+.contacts__block-half p, .contacts__block-half a {
+	display: block;
 	font-size: 20px;
-	line-height: 1.5;
-	font-weight: 300;
+	line-height: 2;
+	font-weight: 400;
+	color: #1e1e1e;
+	text-decoration: none;
+	transition: .3s ease;
+}
+
+.contacts__block-half a:hover {
+	color: #d70000;
 }
 
 .contacts label, .contacts input, .contacts textarea {
