@@ -42,17 +42,17 @@
     <div class="contacts__block-half">
       <h2>POST YOUR QUERY</h2>
       <div class="contact-us">
-        <form action="#">
+        <form action="send.php" method="post">
           <label for="customerName">Name <span>&#x2a;</span></label>
-          <input id="customerName" name="customerName" required="" type="text"/>
+          <input id="customerName" name="first_name" required="" type="text"/>
           <label for="customerEmail">Email-ID<span>&#x2a;</span></label>
-          <input id="customerEmail" name="customerEmail" required="" type="email"/>
+          <input id="customerEmail" name="email" required="" type="email"/>
           <label for="customerPhone">Phone</label>
-          <input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel"/>
+          <input id="customerPhone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel"/>
           <label for="orderSubject">Subject</label>
-          <input id="orderSubject" name="orderNumber" type="text"/>
+          <input id="orderSubject" name="subject" type="text"/>
           <label for="customerNote">Your message<span>&#x2a;</span></label>
-          <textarea id="customerNote" name="customerNote" required="" rows="4"></textarea>
+          <textarea id="customerNote" name="message" required="" rows="4"></textarea>
           <button id="customerOrder" class="btn-send">Send</button>
         </form>
       </div>
