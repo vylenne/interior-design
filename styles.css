@@ -807,6 +807,10 @@ input:focus, textarea:focus {
 
 .modal__text {
 	color: #EEEEEE;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 2vw;
 }
 
 .modal .slick-slide {
@@ -849,12 +853,12 @@ input:focus, textarea:focus {
 }
 
 .modal .slick-next {
-	right: 14px !important;
+	right: 20px !important;
 	z-index: 30;
 }
 
 .modal .slick-prev {
-	left: 4px !important;
+	left: 2px !important;
 	z-index: 30;
 }
 
@@ -971,6 +975,10 @@ input:focus, textarea:focus {
 
 	.interior__gallery--block {
 		width: 47%;
+	}
+
+	.modal__cross {
+		right: 20px;
 	}
 }
 
@@ -1108,9 +1116,9 @@ input:focus, textarea:focus {
 		width: 24px;
 	}
 
-	/*.modal.active div:first-child {*/
-		/*height: 100%;*/
-	/*}*/
+	.modal__text {
+		top: 20vw;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -1222,5 +1230,9 @@ input:focus, textarea:focus {
 
 	.footer-list__link {
 		max-width: none;
+	}
+
+	.modal__text {
+		top: 30vw;
 	}
 }
