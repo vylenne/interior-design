@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <title>Main page of interior design</title>
 </head>
 <body>
@@ -267,28 +268,24 @@
     <p class="copyright">© 2020 <span>Rayvat Engineering.</span> All Rights Reserved.</p>
   </div>
 </footer>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
 <script type="text/javascript">
-	$(document).ready(function() {
-		$('.main__slider').slick({
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: false,
-			autoplay: true,
-			autoplaySpeed: 1500,
-			fade: true,
-			speed: 500,
-			cssEase: 'ease-in-out',
-			draggable: true
-		});
-		$('.mobile-menu').click(function() {
-			$(this).toggleClass('active');
-			$('.topmenu').toggleClass('active');
-		})
-
+	$('.main__slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 1500,
+		fade: true,
+		speed: 500,
+		cssEase: 'ease-in-out',
+		draggable: true
 	});
+	$('.mobile-menu').click(function() {
+		$(this).toggleClass('active');
+		$('.topmenu').toggleClass('active');
+	})
 </script>
 </body>
 </html>
